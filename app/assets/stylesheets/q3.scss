@@ -1,0 +1,108 @@
+.icon{
+    width:50px; height:50px; background-color:#ff7473;
+    border-top-right-radius:100px;
+    border-bottom-left-radius:100px;
+    border-bottom-right-radius:100px;
+    -ms-transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -o-transform:rotate(225deg);
+    position: relative;
+    top: 119px;
+    left: 839px;
+}
+
+.icon_circle {
+    width: 30px;
+	height: 30px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+	top: 80px;
+	left: 849px;
+}
+
+.first_box {
+	width: 714px;
+	height: 10px;
+	background: #ff7473;
+	margin: 100px 150px 10px 150px;
+}
+
+.second_box {
+    width: 476px;
+    height: 10px;
+    background: #34314c;
+    margin-left: 864px;
+    margin-right: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.question_box h1{
+    //글꼴 지정
+    color: #34314C;
+    margin-left: 170px;
+    font-weight: bold;
+}
+
+.question_box .third_box {
+    width: 1190px;
+    height: 10px;
+    background: #34314c;
+    margin: 10px 150px 10px 150px;
+}
+
+#form_tag #year_label{
+    margin-left: 170px;
+    color: #34314c;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#form_tag #month_label{
+    margin-left: 20px;
+    color: #34314c;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#form_tag #year_month_submit {
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	text-align: center;
+	color: #47b8e0;
+	padding: 10px 20px;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+	border: none;
+    cursor : pointer;
+    outline: none;
+}
+
+#form_tag #separation_period_year {
+    width: 350px;
+    height: 50px;
+    border: 3px solid #bfbfbf;
+    position: relative;
+    top: -10px; 
+    outline: none;
+}
+
+
+#form_tag #separation_period_month {
+    width: 350px;
+    height: 50px;
+    border: 3px solid #bfbfbf;
+    position: relative;
+    top: -10px;
+    outline: none;
+}

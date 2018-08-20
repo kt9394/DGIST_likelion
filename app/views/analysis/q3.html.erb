@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag "q3" %>
+
+<div class="icon">
+</div>
+
+<div class="icon_circle">
+</div>
+
+<div class="first_box">
+</div>
+
+<div class="second_box">
+</div>
+
+<div class="question_box">
+   <h1><font color="#ff7473">3</font>/5 <%= @Q3 %> </h1>
+   <div class="third_box">
+   </div>
+</div>
+
+
+<form action='#' id="form_tag">
+   <input type="hidden" name="total_asset_an" value=<%=params[:total_asset_an] %>>
+   <input type="hidden" name="marriage_year" value=<%=params[:marriage_year] %>>
+   <label id="year_label">Year</label>
+   <input type="number" min="0" step="1" name="separation_period_year" id="separation_period_year">
+   <label id="month_label">Month</label>
+   <input type="number" min="0" step="1" name="separation_period_month" id="separation_period_month">
+   <input type="submit" id="year_month_submit" onclick="GoToNextPage()" value=">>">
+</form>
+
+
+<script>
+	function GoToNextPage(){
+    if((document.getElementById("separation_period_year").value*1 >0)&&(document.getElementById("separation_period_month").value*1 >0)){
+        document.getElementById("form_tag").action ="/analysis/q4"
+    }
+    else if(!(document.getElementById("separation_period_year").value) || !(document.getElementById("separation_period_month").value)){
+        alert("응답하지 않으셨습니다.")
+    }
+    }
+</script>

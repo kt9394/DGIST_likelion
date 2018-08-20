@@ -1,0 +1,74 @@
+<%= stylesheet_link_tag "q1" %>
+<div class="icon">
+</div>
+<div class="icon_circle">
+</div>
+<div class="first_box">
+</div>
+<div class="second_box">
+</div>
+<div class="question_box">
+   <h1><font color="#ff7473">1</font>/5 <%= @Q1 %></h1>
+   <div class="third_box">
+   </div>
+</div>
+
+<div id="mouse">
+   <p>
+      <button type="button" style="background: white" id="answer_1" onclick="ClickEventFunc(<%=@A1[1]["an"]%>)"> <%= @A1[1]["text"] %></button>
+   </p>
+   <p>
+      <button type="button" style="background: white" id="answer_2" onclick="ClickEventFunc(<%=@A1[2]["an"]%>)"> <%= @A1[2]["text"] %> </button>
+   </p>
+   <p>
+      <button type="button" style="background: white" id="answer_3" onclick="ClickEventFunc(<%=@A1[3]["an"]%>)"> <%= @A1[3]["text"] %> </button>
+   </p>
+   <p>
+      <button type="button" style="background: white" id="answer_4" onclick="ClickEventFunc(<%=@A1[4]["an"]%>)"> <%= @A1[4]["text"] %> </button>
+   </p>
+</div>
+
+<form id="form_tag" action='#' onclick="GoToNextPage()">
+   <input type="hidden" id="answer_sheet" name="answer_sheet" value="">
+   <input type="submit" id="submit_1" value=">>">
+</form>
+
+<script>
+   tnoq = 4;
+   var observer = false;
+   function ClickEventFunc(answer_number){
+      if((document.getElementById("answer_"+answer_number).style.background == "white") && ( observer == false)){
+         document.getElementById("answer_"+answer_number).style.background = "rgb(255, 191, 0)"
+         observer = true;
+      }else if((document.getElementById("answer_"+answer_number).style.background == "rgb(255, 191, 0)") && (observer == true)){
+         document.getElementById("answer_"+answer_number).style.background = "white"
+         observer = false;
+      }else if((document.getElementById("answer_"+answer_number).style.background == "white") && (observer == true)){
+         for (i = 1; i<tnoq+1; i++){
+            document.getElementById("answer_"+i).style.background = "white"
+         }
+         document.getElementById("answer_"+answer_number).style.background = "rgb(255, 191, 0)"
+      }
+   }
+   
+    function GoToNextPage(){
+      //the_number_of_questions
+      tnoq = 4;
+      one_or_zero = 0;
+      var answer_sheet=[];
+      for (i = 1; i<tnoq+1; i++){
+         if ( document.getElementById("answer_"+i).style.background == "rgb(255, 191, 0)" ){
+            answer_sheet.push(i)
+            document.getElementById("answer_sheet").value = answer_sheet
+            one_or_zero=1;
+         }
+      }
+      if(one_or_zero == 1){
+             document.getElementById("form_tag").action = "/analysis/q2"
+         }
+         else{
+             alert("응답하지 않으셨습니다.")
+         }
+
+   }
+</script>

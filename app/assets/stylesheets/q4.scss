@@ -1,0 +1,141 @@
+.icon{
+    width:50px; height:50px; background-color:#ff7473;
+    border-top-right-radius:100px;
+    border-bottom-left-radius:100px;
+    border-bottom-right-radius:100px;
+    -ms-transform:rotate(225deg);
+    -webkit-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -o-transform:rotate(225deg);
+    position: relative;
+    top: 119px;
+    left: 1077px;
+}
+
+.icon_circle {
+    width: 30px;
+	height: 30px;
+	background: white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+	top: 80px;
+	left: 1087px;
+}
+
+.first_box {
+	width: 952px;
+	height: 10px;
+	background: #ff7473;
+	margin: 100px 150px 10px 150px;
+}
+
+.second_box {
+    width: 238px;
+    height: 10px;
+    background: #34314c;
+    margin-left: 1102px;
+    margin-right: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.question_box h1{
+    //글꼴 지정
+    color: #34314C;
+    margin-left: 170px;
+    font-weight: bold;
+}
+
+.question_box .third_box {
+    width: 1190px;
+    height: 10px;
+    background: #34314c;
+    margin: 10px 150px 10px 150px;
+}
+
+#mouse button:hover{
+    background: #ffbf00 !important;
+}
+
+#answer_1 {
+    width: 512px;
+    height: 300px;
+    background: #BFBFBF;
+    margin-top: 10px;
+    margin-left: 157px;
+    color: #34314c;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor : pointer;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#d6d6d6);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#ffffff));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #ffbf00;
+	outline: none;
+}
+
+#answer_2 {
+    width: 512px;
+    height: 300px;
+    background: #BFBFBF;
+    margin-top: 10px;
+    margin-left: 704px;
+    color: #34314c;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor : pointer;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#d6d6d6);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		to(#ffffff));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #ffbf00;
+	position: relative;
+    top: -325px;
+    cursor : pointer;
+    outline: none;
+}
+
+#form_tag #submit_4 {
+    width: 120px;
+    height: 300px;
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #47b8e0;
+	padding: 10px 20px;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+	border: none;
+	cursor : pointer;
+	position: relative;
+    top: -640px;
+    left: 1220px;
+    outline: none;
+}

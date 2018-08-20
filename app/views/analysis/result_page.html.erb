@@ -1,0 +1,56 @@
+result_page.html.erb
+<div class="container ">
+  <blockquote class=“blockquote  text-center”>
+     <h1 id="your-answer">이혼 판례 결과서</h1>
+       
+  </blockquote>
+  <button class="btn btn-outline-info input-box" disabled>
+    <ul class="input-list">
+      <li> <h5 class="your-input"><strong>당신의 상황은 아래와 같아요</strong></h2></li>
+    <li><strong>재산 총 규모</strong> : <%= @total_asset %></li>
+    <li><strong>결혼 년도</strong> : <%= @marriage_year %>년</li>
+    <li><strong>별거 기간</strong> : <%= @separation_period_year %>년 <%= @separation_period_month %>개월</li> 
+    <li><strong>동의 여부</strong> : <%= @agreement %></li> 
+    <li><strong>자녀 유무</strong> : <%= @parantal_status %></li>
+    </ul>
+  </button>
+  <h5 id="desc">당신의 상황과 가장 비슷한 판례를 보여드릴게요!</h3>
+  <hr>
+
+  <% @search_results.each do |x| %>
+    <div class" result-item">
+      <a class="btn btn-outline-info btn-block result-button" role="button"  href="<%= x.url %>">
+        <div class="case">
+          <h2><%= x.title %></h2>
+          <p><%= x.abstract %></p>
+        </div>
+          <hr>
+          <div class="case-info">
+          <ul class="result-info-list">
+            
+            <li> <strong>재산 총 규모</strong> : <%= x.total_asset %>억 원 </li>
+            <li> <strong>결혼 년도</strong> : <%= x.marriage_year %>년 </li>
+            <li> <strong>별거 기간</strong> : <%= x.separation_period_year %>년 <%= x.separation_period_month %>개월 </li>
+            <li> <strong>합의 여부</strong> :
+              <% if (x.agreement == 1) %>
+                O
+              <% else %>
+                X
+              <% end %>
+            </li>
+            <li> <strong>자녀 여부</strong> :
+              <% if (x.parental_status == 1) %>
+                O
+              <% else %>
+                X
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </div>
+  
+  <% end %>
+  
+</div>
+

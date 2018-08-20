@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  total_asset: 1
+  marriage_year: 1
+  separation_period_year: 1
+  separation_period_month: 1
+  agreement: 1
+  parental_status: 1
+  title: MyString
+  abstract: MyText
+  url: MyString
+
+two:
+  total_asset: 1
+  marriage_year: 1
+  separation_period_year: 1
+  separation_period_month: 1
+  agreement: 1
+  parental_status: 1
+  title: MyString
+  abstract: MyText
+  url: MyString

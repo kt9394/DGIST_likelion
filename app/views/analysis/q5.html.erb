@@ -1,0 +1,75 @@
+<%= stylesheet_link_tag "q5" %>
+
+<div class="icon">
+</div>
+
+<div class="icon_circle">
+</div>
+
+<div class="first_box">
+</div>
+
+<div class="question_box">
+   <h1><font color="#ff7473">5</font>/5 <%= @Q5 %> </h1>
+   <div class="third_box">
+   </div>
+</div>
+
+<div id="mouse">
+   <p>
+      <button type="button" style="background: white" id="answer_1" onclick="ClickEventFunc(<%=@A5[1]["an"]%>)"> <%= @A5[1]["text"] %></button>
+   </p>
+   <p>
+      <button type="button" style="background: white" id="answer_2" onclick="ClickEventFunc(<%=@A5[2]["an"]%>)"> <%= @A5[2]["text"] %> </button>
+   </p>
+</div>
+
+<form action='#' id="form_tag" >
+   <input type="hidden" name="total_asset_an" value=<%=params[:total_asset_an] %>>
+   <input type="hidden" name="marriage_year" value=<%=params[:marriage_year] %>>
+   <input type="hidden" name="separation_period_year" value=<%=params[:separation_period_year] %>>
+   <input type="hidden" name="separation_period_month" value=<%=params[:separation_period_month] %>> 
+   <input type="hidden" name="agreement" value=<%=params[:agreement] %>>
+   <input type="hidden" id="answer_sheet" name="parental_status" value="">
+   <input type="submit" value="제출" id="submit_5" onclick="GoToNextPage()">
+</form>
+
+<script>
+   tnoq = 2;
+   var observer = false;
+   function ClickEventFunc(answer_number){
+      if((document.getElementById("answer_"+answer_number).style.background == "white") && ( observer == false)){
+         document.getElementById("answer_"+answer_number).style.background = "rgb(255, 191, 0)"
+         observer = true;
+      }else if((document.getElementById("answer_"+answer_number).style.background == "rgb(255, 191, 0)") && (observer == true)){
+         document.getElementById("answer_"+answer_number).style.background = "white"
+         observer = false;
+      }else if((document.getElementById("answer_"+answer_number).style.background == "white") && (observer == true)){
+         for (i = 1; i<tnoq+1; i++){
+            document.getElementById("answer_"+i).style.background = "white"
+         }
+         document.getElementById("answer_"+answer_number).style.background = "rgb(255, 191, 0)"
+      }
+   }
+   
+    function GoToNextPage(){
+      //the_number_of_questions
+      tnoq = 2;
+      one_or_zero = 0;
+      var answer_sheet=[];
+      for (i = 1; i<tnoq+1; i++){
+         if ( document.getElementById("answer_"+i).style.background == "rgb(255, 191, 0)" ){
+            answer_sheet.push(i)
+            document.getElementById("answer_sheet").value = answer_sheet
+            one_or_zero=1;
+         }
+      }
+      if(one_or_zero == 1){
+             document.getElementById("form_tag").action = "/analysis/result_page"
+         }
+         else{
+             alert("응답하지 않으셨습니다.")
+         }
+
+   }
+</script>
