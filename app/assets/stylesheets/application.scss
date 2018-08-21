@@ -1,283 +1,221 @@
 @import "bootstrap";
-
-
-
- .navbar {
-
+#banner {
+  background:#ff7473;
+  background-size: cover;
+  background-position: bottom center;
+  height: 500px;
+  width: 100%;
+}#banner .content h1 {
+  position: relative;
+  top:  300px;
+  width: 500px;
+  margin: 0 auto;
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}#banner .content h2 {
+  position: relative;
+  top:  200px;
+  width: 500px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+} .navbar {
   min-height: 80px;
-
-}
-
- .banner {
-
+} .banner {
   min-height: 80px;
-
-}
-
-.nav-pills > a{
-
-	text-decoration: none;
-
-}
-
-
-
-.tab_textbox1{
-
-	width: 750px;
-
-	height: 300px;
-
-	padding: 30px;
-
-	display: inline-block;
-
-	border-style: solid;
-
-	border-color: #ff7473;
-
-	border-radius: 1.5em;
-
-	color: #ff7473
-
-}
-
-
-
-.tab_textbox2{
-
-	width: 750px;
-
-	height: 300px;
-
-	padding: 30px;
-
-	display: inline-block;
-
-	border-style: solid;
-
-	border-color: #ffc952;
-
-	border-radius: 1.5em;
-
-	color: #ffc952
-
-}
-
-.tab_textbox3{
-
-	width: 750px;
-
-	height: 300px;
-
-	padding: 30px;
-
-	display: inline-block;
-
-	border-style: solid;
-
-	border-color: #47b8e0;
-
-	border-radius: 2em;
-
-	color: #47b8e0
-
-}
-
-.tab_textbox4{
-
-	width: 750px;
-
-	height: 300px;
-
-	padding: 30px;
-
-	display: inline-block;
-
-	border-style: solid;
-
-	border-color: #34314c;
-
-	border-radius: 2em;
-
-	color: #34314c
-
-}
-
-
-
-
-
-.div1{
-
-	/*background-color: #ff7473;*/
-
-	padding-left:17%;
-
-	padding-right:17%
-
-}
-
-.div2{
-
-	/*background-color: #ffc952;*/
-
-	padding-left:17%;
-
-	padding-right:17%
-
-}
-
-.div3{
-
-	/*background-color: #47b8e0;*/
-
-	padding-left:17%;
-
-	padding-right:17%
-
-}
-
-.div4{
-
-	/*background-color: #34314c;*/
-
-	padding-left:17%;
-
-	padding-right:17%
-
-}
-
-
-
- .nav-pills > a.tab1 {
-
- 	height: 40px;
-
- 	line-height: 40px;
-
- 	padding: 0px;
-
- 	color: #ff7473;
-
+}.nav-pills > a{
+   text-decoration: none;
+}.tab_image{
+  
+  margin-top: 185px;
+  
+  margin-left: 300px;
+}.tab_text h2{
+  
+  position: relative;
+  top:  -680px;
+  margin-left: 345px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
+}.tab_text3 h2{
+  
+  position: relative;
+  top:  -680px;
+  margin-left: 390px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
+}.tab_text4 h2{
+  
+  position: relative;
+  top:  -680px;
+  margin-left: 430px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
+}.tab_textbox1{
+   background:#ffffff;
+   background-size: cover;
+   background-position: bottom center;
+   position: relative;
+   top: -300px;
+   
+   margin-left: 1030px ;
+   width: 600px;
+   height: 260px;
+   padding: 30px;
+   display: inline-block;
+   border-style: solid;
+   border-color: #ffffff;
+   border-radius: 1.5em;
+   color: #ff7473
+}.tab_textbox2{
+   background:#ffffff;
+   background-size: cover;
+   background-position: bottom center;
+   position: relative;
+   top: -300px;
+   
+   margin-left: 1030px ;
+   width: 600px;
+   height: 260px;
+   padding: 30px;
+   display: inline-block;
+   border-style: solid;
+   border-color: #ffffff;
+   border-radius: 1.5em;
+   color: #ffc952
+}.tab_textbox3{
+   background:#ffffff;
+   background-size: cover;
+   background-position: bottom center;
+   position: relative;
+   top: -300px;
+   
+   margin-left: 1030px ;
+   width: 600px;
+   height: 260px;
+   padding: 30px;
+   display: inline-block;
+   border-style: solid;
+   border-color: #ffffff;
+   border-radius: 1.5em;
+   color: #47b8e0
+}.tab_textbox4{
+   background:#ffffff;
+   background-size: cover;
+   background-position: bottom center;
+   position: relative;
+   top: -300px;
+   
+   margin-left: 1030px ;
+   width: 600px;
+   height: 260px;
+   padding: 30px;
+   display: inline-block;
+   border-style: solid;
+   border-color: #ffffff;
+   border-radius: 1.5em;
+   color: #34314c
+}.div1{
+   position: relative;
+   margin: 0px auto;
+   background:#ff7473;
+   background-size: cover;
+   background-position: bottom center;
+   height: 500px;
+   width: 100%;
+}.div2{
+   /*background-color: #ffc952;*/
+   position: relative;
+   margin: 0px auto;
+   background:#ffc952;
+   background-size: cover;
+   background-position: bottom center;
+   height: 500px;
+   width: 100%;
+}.div3{
+   /*background-color: #47b8e0;*/
+   position: relative;
+   margin: 0px auto;
+   background:#47b8e0;
+   background-size: cover;
+   background-position: bottom center;
+   height: 500px;
+   width: 100%;
+}.div4{
+   /*background-color: #34314c;*/
+   position: relative;
+   margin: 0px auto;
+   background:#34314c;
+   background-size: cover;
+   background-position: bottom center;
+   height: 500px;
+   width: 100%;
+} .nav-pills > a.tab1 {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    color: #ff7473;
  }
-
   .nav-pills > a.tab2 {
-
- 	height: 40px;
-
- 	line-height: 40px;
-
- 	padding: 0px;
-
- 	color: #ffc952;
-
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    color: #ffc952;
  }
-
   .nav-pills > a.tab3 {
-
- 	height: 40px;
-
- 	line-height: 40px;
-
- 	padding: 0px;
-
- 	color: #47b8e0;
-
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    color: #47b8e0;
  }
-
   .nav-pills > a.tab4 {
-
- 	height: 40px;
-
- 	line-height: 40px;
-
- 	padding: 0px;
-
- 	color: #34314c;
-
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    color: #34314c;
  }
-
 .nav-pills > a.active1 {
-
- 	background-color: #ff7473;
-
- 	color: white;
-
- 	border-radius: 5px;
-
- 	}
-
-
-
+    background-color: #ff7473;
+    color: white;
+    border-radius: 5px;
+    }
 .nav-pills > a.active2 {
-
- 	background-color: #ffc952;
-
- 	color: white;
-
- 	border-radius: 5px;
-
- 	}
-
-
-
+    background-color: #ffc952;
+    color: white;
+    border-radius: 5px;
+    }
 .nav-pills > a.active3 {
-
- 	background-color: #47b8e0;
-
- 	color: white;
-
- 	border-radius: 5px;
-
- 	}
-
-
-
+    background-color: #47b8e0;
+    color: white;
+    border-radius: 5px;
+    }
 .nav-pills > a.active4 {
-
- 	background-color: #34314c;
-
- 	color: white;
-
- 	border-radius: 5px;
-
- 	}
-
-
-
+    background-color: #34314c;
+    color: white;
+    border-radius: 5px;
+    }
  .popover{
-
     min-width: 100%; /* Max Width of the popover (depending on the container!) */
-
     height: 200px;
-
     padding-left:0
-
-}
-
-/*
-
+}/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
-
  * listed below.
-
  *
-
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
-
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
-
  *
-
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
-
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
-
  * files in this directory. Styles in this file should be added after the last require_* statement.
-
  * It is generally better to create a new file per style scope.
-
  *
-
  */

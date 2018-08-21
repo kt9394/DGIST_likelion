@@ -1,229 +1,91 @@
 // Place all the styles related to the home controller here.
-
 // They will automatically be included in application.css.
-
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+/*
 #banner {
-
   background:#ff7473;
-
   background-size: cover;
-
   background-position: bottom center;
-
   height: 500px;
-
   width: 100%;
-
-}
-
-
-
+}*/
 #banner .content h1 {
-
   position: relative;
-
   top:  300px;
-
   width: 500px;
-
   margin: 0 auto;
-
   border: 2px solid white;
-
   color: #ffffff;
-
   font-size: 42px;
-
   font-weight: 600;
-
   text-align: center;
-
-}
-
-#banner .content h2 {
-
+}#banner .content h2 {
   position: relative;
-
   top:  200px;
-
   width: 500px;
-
   margin: 0 auto;
-
   color: #ffffff;
-
   font-size: 70px;
-
   font-weight: 600;
-
   text-align: center;
-
-}
-
-#business {
-
+}#business {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyalUiDqsyoTlW80NZFzbFKgzlzRZLGLA8nml-p2ppPZyP2Z8ZQ);
-
   background-size: cover;
-
   background-position: bottom center;
-
   height: 500px;
-
   width: 100%;
-
-}
-
-
-
-#business .byline h1 {
-
+}#business .byline h1 {
   position: relative;
-
   top:  250px;
-
   width: 500px;
-
   margin: 0 auto;
-
   border-bottom: 3px solid #ffffff;
-
   border-top: 3px solid #ffffff;
-
   color: #ffffff;
-
   font-size: 30px;
-
   font-weight: 3000;
-
-}
-
-
-
-#logo {
-
+}#logo {
   position: relative;
-
   top: 100px;
-
   width: 100%;
-
-}
-
-
-
-#logo .content h1{
-
-  color: #ffffff;
-
+}#logo .content h1{
+  color: #000000;
   font-size: 50px;
-
   font-weight: 1000px;
-
-
-
-}
-
-
-
-.actions {
-
+}.actions {
   text-align: center;
-
   margin-top: 0px auto;
-
-}
-
-
-
-.actions a {
-
+}.actions a {
   background-color: #34314c;
-
   border-radius: 15px;
-
   color: #FFFFFF;
-
   font-family: 'Yantramanav', sans-serif;
-
   font-size: 30px;
-
   font-weight: 3000;
-
   display: inline-block;
-
   margin: 0px auto;
-
   padding: 30px;
-
   text-align: center;
-
-}
-
-
-
-.business_explanation {
-
-
-
+}.business_explanation {
   text-align: center;
-
   margin-top: 100px;
-
-}
-
-
-
-.business_explanation h1{
-
-
-
+}.business_explanation h1{
   color: black;
-
   font-family: 'Yantramanav', sans-serif;
-
   font-size: 40px;
-
   font-weight: 300;
-
   margin: 0px auto;
-
   text-align: center;
-
-}
-
-
-
-#business .byline h1{
-
+}#business .byline h1{
   color: #ffffff;
-
   font-size: 30px;
-
   font-weight: 3000;
-
   text-align: center;
-
-}
-
-
-
-.business_explanation h2{
-
-
-
+}.business_explanation h2{
   color: black;
-
   font-family: 'Yantramanav', sans-serif;
-
   font-size: 30px;
-
   font-weight: 300;
-
   margin: 0px auto;
-
   text-align: center;
-
 }
