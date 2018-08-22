@@ -30,21 +30,14 @@
   min-height: 80px;
 }.nav-pills > a{
    text-decoration: none;
-}.tab_image{
-  
-  margin-top: 185px;
-  
-  margin-left: 300px;
+}// 배너 이미지와 텍스트 시작
+.tab_image{
 }.tab_text h2{
-  
-  position: relative;
-  top:  -680px;
-  margin-left: 345px;
   color: #ffffff;
   font-size: 60px;
   font-weight: 600;
-}.tab_text3 h2{
-  
+}// 배너 이미지와 텍스트 끝
+.tab_text3 h2{
   position: relative;
   top:  -680px;
   margin-left: 390px;
@@ -60,64 +53,52 @@
   font-size: 60px;
   font-weight: 600;
 }.tab_textbox1{
+   vertical-align: top;
    background:#ffffff;
    background-size: cover;
-   background-position: bottom center;
-   position: relative;
-   top: -300px;
-   
-   margin-left: 1030px ;
    width: 600px;
    height: 260px;
    padding: 30px;
+   margin-left: 7%;
    display: inline-block;
    border-style: solid;
    border-color: #ffffff;
    border-radius: 1.5em;
    color: #ff7473
 }.tab_textbox2{
+   vertical-align: top;
    background:#ffffff;
    background-size: cover;
-   background-position: bottom center;
-   position: relative;
-   top: -300px;
-   
-   margin-left: 1030px ;
    width: 600px;
    height: 260px;
    padding: 30px;
+   margin-left:7%;
    display: inline-block;
    border-style: solid;
    border-color: #ffffff;
    border-radius: 1.5em;
    color: #ffc952
 }.tab_textbox3{
+   vertical-align: top;
    background:#ffffff;
    background-size: cover;
-   background-position: bottom center;
-   position: relative;
-   top: -300px;
-   
-   margin-left: 1030px ;
    width: 600px;
    height: 260px;
    padding: 30px;
+   margin-left:7%;
    display: inline-block;
    border-style: solid;
    border-color: #ffffff;
    border-radius: 1.5em;
-   color: #47b8e0
+   color: #47b8e0;
 }.tab_textbox4{
+   vertical-align: top;
    background:#ffffff;
    background-size: cover;
-   background-position: bottom center;
-   position: relative;
-   top: -300px;
-   
-   margin-left: 1030px ;
    width: 600px;
    height: 260px;
    padding: 30px;
+   margin-left:7%;
    display: inline-block;
    border-style: solid;
    border-color: #ffffff;

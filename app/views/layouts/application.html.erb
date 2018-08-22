@@ -32,8 +32,8 @@
     </div>
     <nav class="d-flex align-items-center nav-pills ">
       <a style="background-color: #eee" class="tab2 flex-sm-fill text-sm-center"></a>
-      <a id="tab_1" style="padding: 1px" class="tab1 flex-sm-fill text-sm-center font-weight-bold active1" href="#" onclick="Tab(1)">이혼 절차 정보</a>
-      <a id="tab_2" class="tab2 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(2)">이혼 판례 분석</a>
+      <a id="tab_1" class="tab1 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(1)">이혼 절차 정보</a>
+      <a id="tab_2" class="tab2 flex-sm-fill text-sm-center font-weight-bold active2" href="#" onclick="Tab(2)">이혼 판례 분석</a>
       <a id="tab_3" class="tab3 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(3)">이혼 컨설팅</a>
       <a id="tab_4" class="tab4 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(4)">커뮤니티</a>
       <a style="background-color: #eee" class="tab2 flex-sm-fill text-sm-center"></a>
@@ -49,147 +49,96 @@
       </div>
     </div>
  -->
-    <div id=div1 class="div1">
-      
-      <div style="height: 15px; background-color:#ffffff">
-      
-      </div>
-      
-      <div class="tab_image">
-        
-        <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
-      
-      </div>
-      <div class="tab_textbox1">
-        <h2>이혼절차 정보를 알기쉽게, 이해하기 쉽게 제공합니다.
-        </h2>
-        <form action="#">
-          <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">이혼 절차 정보
-          </button>
-        </form>
-      </div>
-      
-      <div class="tab_text">
-        
-        <h2>이혼 절차 정보</h2>
-        
+    <div id="div1" class="div1" style="display: none">
+      <div style="height: 15px; background-color:#ffffff"></div>
+        <div style="margin-left: 20%; margin-top: 105px">
+        <div style="display: inline-block">
+          <div style="display: block" class="tab_text">
+            <h2>이혼 절차 정보</h2>
+          </div>
+          <div style="display: block" class="tab_image">
+            <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
+          </div>
+        </div>
+        <div class="tab_textbox1">
+          <h2>이혼절차 정보를 알기쉽게, 이해하기 쉽게 제공합니다.
+          </h2>
+          <form action="#">
+            <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">이혼 절차 정보
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-    <div id=div2 class="div2" style="display: none">
-      
-      <div style="height: 15px; background-color:#ffffff">
-      
-      </div>
-      
-      <div class="tab_image">
-        
-        <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
-      
-      </div>
-      <div class="tab_textbox2">
-        <h2>차별화된 알고리즘으로 고객의 상황에 맞는 판례를 검색합니다.
-        </h2>
-        <form action="/analysis/q1">
-          <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">판례 검색 시작
-          </button>
-        </form>
-      </div>
-      
-      <div class="tab_text">
-        
-        <h2>이혼 판례 분석</h2>
-        
+    <!---->
+    <!---->
+    <div id="div2" class="div2">
+      <div style="height: 15px; background-color:#ffffff"></div>
+        <div style="margin-left: 20%; margin-top: 105px">
+        <div style="display: inline-block">
+          <div style="display: block" class="tab_text">
+            <h2>이혼 판례 분석</h2>
+          </div>
+          <div style="display: block" class="tab_image">
+            <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
+          </div>
+        </div>
+        <div  class="tab_textbox2">
+          <h2>차별화된 알고리즘으로 고객의 상황에 맞는 판례를 검색합니다.
+          </h2>
+          <form action="/analysis/q1">
+            <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">이혼 판례 분석
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-    <!--
-    <div id=div2 class="div2"  style="display: none">
-      <div class="tab_textbox2">
-        <h2>차별화된 알고리즘으로 고객의 상황에 맞는 판례를 검색합니다.
-        </h2>
-        <form action="/analysis/q1">
-          <button style="margin-left: 80%; position: relative; top: 100px;" type="submit" class="btn btn-outline-dark">판례 검색 시작
-          </button>
-        </form>
+    <!---->
+    <!---->
+    <div id="div3" class="div3" style="display: none">
+      <div style="height: 15px; background-color:#ffffff"></div>
+        <div style="margin-left: 20%; margin-top: 105px">
+        <div style="display: inline-block">
+          <div style="display: block" class="tab_text">
+            <h2>이혼 컨설팅</h2>
+          </div>
+          <div style="display: block" class="tab_image">
+            <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
+          </div>
+        </div>
+        <div  class="tab_textbox3">
+          <h2>국내 최고의 이혼 전문 변호사들과 함께 이혼 소송을 준비할 수 있습니다.
+          </h2>
+          <form action="#">
+            <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">컨설팅 시작
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-        -->
-    <div id=div3 class="div3" style="display: none">
-      
-      <div style="height: 15px; background-color:#ffffff">
-      
-      </div>
-      
-      <div class="tab_image">
-        
-        <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
-      
-      </div>
-      <div class="tab_textbox3">
-        <h2>국내 최고의 이혼 전문 변호사들과 함께 이혼 소송을 준비할 수 있습니다.
-        </h2>
-        <form action="#">
-          <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">컨설팅 시작
-          </button>
-        </form>
-      </div>
-      
-      <div class="tab_text3">
-        
-        <h2>이혼 컨설팅</h2>
-        
+    <!---->
+    <!---->
+    <div id="div4" class="div4" style="display: none">
+      <div style="height: 15px; background-color:#ffffff"></div>
+        <div style="margin-left: 20%; margin-top: 105px">
+        <div style="display: inline-block">
+          <div style="display: block" class="tab_text">
+            <h2>커뮤니티</h2>
+          </div>
+          <div style="display: block" class="tab_image">
+            <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
+          </div>
+        </div>
+        <div  class="tab_textbox4">
+          <h2>이혼에 관심있는 다른 사람들과 정보를 공유해보세요.
+          </h2>
+          <form action="#">
+            <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">컨설팅 시작
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-<!--
-    <div id=div3 class="div3"  style="display: none">
-      <div class="tab_textbox3">
-        <h2>국내 최고의 이혼 전문 변호사들과 함께 이혼 소송을 준비할 수 있습니다.
-        </h2>
-        <form action="#">
-          <button style="margin-left: 80%; position: relative; top: 100px;" type="submit" class="btn btn-outline-dark">컨설팅 시작
-          </button>
-        </form>
-      </div>
-    </div>
--->
-    <div id=div4 class="div4" style="display: none">
-      
-      <div style="height: 15px; background-color:#ffffff">
-      
-      </div>
-      
-      <div class="tab_image">
-        
-        <img style="width: 500px; height: 300px;" src="https://s3.us-east-2.amazonaws.com/rocetio27/banner.png" />
-      
-      </div>
-      <div class="tab_textbox4">
-        <h2>이혼에 관심있는 다른 사람들과 정보를 공유해보세요.
-        </h2>
-        <form action="#">
-          <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">커뮤니티
-          </button>
-        </form>
-      </div>
-      
-      <div class="tab_text4">
-        
-        <h2>커뮤니티</h2>
-        
-      </div>
-    </div>
-<!--
-    <div id=div4 class="div4" style="display: none">
-      <div class="tab_textbox4">
-        <h2>이혼에 관심있는 다른 사람들과 정보를 공유해보세요.
-        </h2>
-        <form action="#">
-          <button style="margin-left: 80%; position: relative; top: 100px;" type="submit" class="btn btn-outline-dark">커뮤니티
-          </button>
-        </form>
-      </div>
-    </div>
-    
-    -->
   <% end %>
   </head>
   <body>

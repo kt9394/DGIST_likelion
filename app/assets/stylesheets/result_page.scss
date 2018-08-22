@@ -1,142 +1,66 @@
 body{
-
   padding-top: 80px;
-
-}
-
-
-
-/* typography */
-
+}/* typography */
 h1, h2, h3, h4, h5, h6 {
-
   line-height: 1;
-
-}
-
-
-
-/* header */
-
+}/* header */
 #logo {
-
   text-transform: uppercase;
-
   letter-spacing: -1px;
-
   font-size: 1.7em;
-
   font-weight: bold;
-
   &:hover {
-
     color: #FFFFFF;
-
     text-decoration: none;
-
   }
-
-}
-
-
-$red-color: #ff7473;
+}$red-color: #ff7473;
 $yellow-color: #ffc952;
 $blue-color: #47b8e0;
 $dark-color: #34314c;
-
 #your-answer {
   color: $dark-color;
   padding-bottom: 0.3em;
-}
-#desc {
+}#desc {
   padding-top: 0.5em;
   color: $blue-color;
-}
-
-.input-box {
+}div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}h2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}.input-box {
   color: $red-color !important;
   border-color: $red-color;
-}
-.input-box:hover {
+}.input-box:hover {
   border-color: $red-color;
-}
-.input-list {
+}.input-list {
   list-style: none;
   padding: 0.5em 0;
   margin-bottom: 0;
-}
-.result-info-list {
+}.result-info-list {
     text-align: center;
     padding-left: 0px;
     list-style: none !important;
-}
-  // .result-item {
-  //   width: auto;
-    
-  // }
-  .result-button {
-    margin: 1em 0;
-    padding: 1em;
-    background-color: white;
-    color: $yellow-color;
-    border-color: $yellow-color;
-  }
-  .result-button:hover {
-    background-color: $yellow-color;
-    color: white;
-  }
-  
-  .case {
-    text-align: left;
-  }
-  
-
-
-
-
-
-
-
-/* footer */
-
-footer {
-
-  margin-top: 45px;
-
-  a {
-
-    color: #555;
-
-    &:hover {
-
-      color: #222;
-
-    }
-
-    small {
-
-      float: left;
-
-    }
-
-  }
-
-  ul {
-
-    float: right;
-
-    list-style: none;
-
-    li{
-
-      float: left;
-
-      margin-left: 15px;
-
-    }
-
-  }
-
-
-
-}
+}.result-item {
+  width: 400px;
+  margin: 0px;
+}.result-button {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: white;
+  color: $yellow-color;
+  border-color: $yellow-color;
+}.result-button:hover {
+  background-color: $yellow-color;
+  color: white;
+}  
+.case {
+  text-align: left;
+}  
