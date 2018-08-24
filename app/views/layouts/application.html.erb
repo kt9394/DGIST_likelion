@@ -23,9 +23,9 @@
     </div>
     <% if request.original_url == request.base_url+"/"%>
     <div style="padding-bottom: 3px;" class="banner shadow-sm bg-light">
-      <a  style=" margin-left:14%; color: #34314c; font-size: 70px; display: inline-block;" class=" font-weight-bold" href="/">
-      Divorce With You</a>
-      <a  style="height: 10px; text-align: bottom; color: #999; display: inline-block;" class=" font-weight-bold" >당신과 함께 하는 이혼</a>
+      <a  style=" margin-left:14%; color: #34314c; font-size: 100px; display: inline-block;" class="title" href="/">
+      아름별</a>
+      <a  style="height: 10px; text-align: bottom; color: #999; font-size: 40px; display: inline-block;" class="title-sibling" >당신과 함께 하는 이혼</a>
     </div>
     <div style="height: 15px; background-color: #eee" >
       <input type="hidden">
@@ -33,7 +33,7 @@
     <nav class="d-flex align-items-center nav-pills ">
       <a style="background-color: #eee" class="tab2 flex-sm-fill text-sm-center"></a>
       <a id="tab_1" class="tab1 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(1)">이혼 절차 정보</a>
-      <a id="tab_2" class="tab2 flex-sm-fill text-sm-center font-weight-bold active2" href="#" onclick="Tab(2)">이혼 판례 분석</a>
+      <a id="tab_2" class="tab2 flex-sm-vfill text-sm-center font-weight-bold active2" href="#" onclick="Tab(2)">이혼 판례 분석</a>
       <a id="tab_3" class="tab3 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(3)">이혼 컨설팅</a>
       <a id="tab_4" class="tab4 flex-sm-fill text-sm-center bg-light font-weight-bold" href="#" onclick="Tab(4)">커뮤니티</a>
       <a style="background-color: #eee" class="tab2 flex-sm-fill text-sm-center"></a>
@@ -64,8 +64,10 @@
           <h2>이혼절차 정보를 알기쉽게, 이해하기 쉽게 제공합니다.
           </h2>
           <form action="#">
-            <button style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark">이혼 절차 정보
-            </button>
+            <a type = "button"; style="margin-left: 70%; position: relative; top: 70px;" type="submit" class="btn btn-outline-dark" href="/analysis/information_page">이혼 절차 정보
+            </a>
+            <!--<a  type= "button" style=" text-align: center; color: #34314c; font-size: 20px;  ; "class=" font-weight-bold" href="/">
+      처음 화면으로 돌아가기</a>-->
           </form>
         </div>
       </div>
@@ -99,7 +101,7 @@
       <div style="height: 15px; background-color:#ffffff"></div>
         <div style="margin-left: 20%; margin-top: 105px">
         <div style="display: inline-block">
-          <div style="display: block" class="tab_text">
+          <div style="display: block" class="tab_text3">
             <h2>이혼 컨설팅</h2>
           </div>
           <div style="display: block" class="tab_image">
@@ -122,7 +124,7 @@
       <div style="height: 15px; background-color:#ffffff"></div>
         <div style="margin-left: 20%; margin-top: 105px">
         <div style="display: inline-block">
-          <div style="display: block" class="tab_text">
+          <div style="display: block" class="tab_text4">
             <h2>커뮤니티</h2>
           </div>
           <div style="display: block" class="tab_image">

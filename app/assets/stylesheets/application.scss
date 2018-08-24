@@ -1,4 +1,12 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+.title{
+  font-family: 'Nanum Pen Script', cursive;
+}
+.title-sibling{
+  font-family: 'Nanum Pen Script', cursive;
+}
 #banner {
   background:#ff7473;
   background-size: cover;
@@ -32,27 +40,31 @@
    text-decoration: none;
 }// 배너 이미지와 텍스트 시작
 .tab_image{
+  margin-top: 33px;
 }.tab_text h2{
+  font-family: 'Jeju Gothic', sans-serif;
   color: #ffffff;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 60px;
 }// 배너 이미지와 텍스트 끝
 .tab_text3 h2{
-  position: relative;
-  top:  -680px;
-  margin-left: 390px;
+  font-family: 'Jeju Gothic', sans-serif;
   color: #ffffff;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 105px;
 }.tab_text4 h2{
-  
-  position: relative;
-  top:  -680px;
-  margin-left: 430px;
+  font-family: 'Jeju Gothic', sans-serif;
   color: #ffffff;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: -25px;
+  margin-left: 140px;
 }.tab_textbox1{
+  font-family: 'Jeju Gothic', sans-serif;
    vertical-align: top;
    background:#ffffff;
    background-size: cover;
@@ -66,6 +78,7 @@
    border-radius: 1.5em;
    color: #ff7473
 }.tab_textbox2{
+  font-family: 'Jeju Gothic', sans-serif;
    vertical-align: top;
    background:#ffffff;
    background-size: cover;
@@ -79,6 +92,7 @@
    border-radius: 1.5em;
    color: #ffc952
 }.tab_textbox3{
+  font-family: 'Jeju Gothic', sans-serif;
    vertical-align: top;
    background:#ffffff;
    background-size: cover;
@@ -92,6 +106,7 @@
    border-radius: 1.5em;
    color: #47b8e0;
 }.tab_textbox4{
+  font-family: 'Jeju Gothic', sans-serif;
    vertical-align: top;
    background:#ffffff;
    background-size: cover;

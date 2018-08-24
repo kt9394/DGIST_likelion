@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180815133230) do
+ActiveRecord::Schema.define(version: 20180824075508) do
 
   create_table "cases", force: :cascade do |t|
     t.integer "total_asset"
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(version: 20180815133230) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "seed_migration_data_migrations", force: :cascade do |t|
+    t.string "version"
+    t.integer "runtime"
+    t.datetime "migrated_on"
   end
 
 end

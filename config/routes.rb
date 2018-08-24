@@ -24,6 +24,9 @@ Rails.application.routes.draw do
   get 'analysis/result_page'
 
 
+  get 'analysis/information_page'
+
+
 
   root 'home#index'
 

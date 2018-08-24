@@ -162,6 +162,7 @@ class AnalysisController < ApplicationController
 
      @parantal_status = @@answers[5][input_data["parental_status"]]["text"]
 
+     @idd = 1
 
 
      # input_data = {                 
