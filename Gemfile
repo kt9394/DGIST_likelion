@@ -1,4 +1,4 @@
-ruby '2.4.1'
+ruby '2.4.0'
 
 source 'https://rubygems.org'
 
@@ -56,9 +56,9 @@ end
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 
-group :production do
-  gem 'pg'
-end
+#group :production do
+#  gem 'pg'
+#end
   
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
